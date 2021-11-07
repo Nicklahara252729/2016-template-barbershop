@@ -1,0 +1,1456 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>BarberShop Delivery</title>
+        <link href="../folder/images/nicklahara.png" rel="icon">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                margin: 0 auto;
+                position: relative;
+                height: 4750px;
+                background: #1E1309;
+            }
+            .header{
+                width: 100%;
+                height: 400px;
+                background-image: url(../folder/images/stylingroom.jpg);
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-position: center;
+                z-index: 1000px;
+				position:absolute;
+			}
+			.image{
+				width:100px;
+				height:100px;
+				background-color:rgba(000,000,000,.3);
+				border-radius:50%;
+				margin:0 auto;
+				position:fixed;
+				margin-left:625px;
+			}
+			.subimg{
+				width:90px;
+				height:90px;
+				border-radius:50%;
+				margin-left:5px;
+				margin-top:5px;
+			}
+			.subimgtext{
+				color:#000;
+				text-align:center;
+				margin-top:-105px;
+				font-family:"wolf in the city";
+				font-size:90px;
+			}
+			.line{
+				width:440px;
+				height:2px;
+				position:absolute;
+				margin-top:50px;
+				position:fixed;
+				margin-left:430px;
+			}
+			.subline1{
+				color: #fff;
+				font-family:"arial";
+				position:absolute;
+				font-size:40px;
+				margin-top:-20px;
+				margin-left:150px;
+			}
+			.subline2{
+				color: rgba(255,255,255,1);
+				font-family:"arial";
+				font-size:40px;
+				margin-left:310px;
+				margin-top:-20px;
+			}
+			.massage{
+				width: 500px;
+                height: 400px;
+                background-image: url(../folder/images/60.png);
+				position: absolute;
+				background-repeat:no-repeat;
+				margin-left:430px;
+				margin-top:150px;
+			}
+			.text{
+				color:#fff;
+				font-family: "timeBurner";
+				position:absolute;
+				margin-top:200px;
+				margin-left:560px;
+			}
+            .inpttxt{
+                border: 0;
+                width: 300px;
+                height: 35px;
+                padding-left: 15px;
+                position: absolute;
+                margin-top: 50px;
+                margin-left: -60px;
+                font-family: "timeBurner";
+                font-size: 13px;
+            }
+            .btn{
+                width: 50px;
+                height: 35px;
+                position: absolute;
+                border: 0;
+                margin-top: 50px;
+                margin-left: 255px;
+                font-family: "timeBurner";
+                font-size: 15px;
+                background-color: rgba(000,000,000,.5);
+                color: #fff;
+                border: solid 1px #fff;
+            }
+            .btn:hover{
+                background-color: #1E1309;
+                transition: all 0.3s;
+                border: solid 1px #fff;
+            }
+            .container{
+                border: solid 0px #000;
+                width: 1200px;
+                height: auto;
+                position: absolute;
+                margin-top: 405px;
+                margin-left: 80px;
+                color: #000;
+                font-family: "timeBurner";
+            }
+            .link1{
+                color: #fff;
+                position: absolute;
+                text-decoration: none;
+                margin-top: 120px;
+                font-size: 20px;
+                margin-left: 50px;
+            }
+            .link1:hover{
+                text-decoration: underline;
+            }
+            .link2{
+                color: #fff;
+                position: absolute;
+                text-decoration: none;
+                margin-top: 120px;
+                font-size: 20px;
+                margin-left: 130px;
+            }
+            .link2:hover{
+                text-decoration: underline;
+            }
+            .btninsubcontainer1{
+                width: 100px;
+                height: 30px;
+                border: 0px;
+                border: solid 1px #F6F6F6;
+                background: rgba(000,000,000,.0);
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+            .btninsubcontainer1:hover{
+                background: #1E1309;
+                transition: all 0.3s;
+            }
+            .btninsubcontainer1-2{
+                width: 100px;
+                height: 30px;
+                border: 0px;
+                border: solid 1px #F6F6F6;
+                background: rgba(000,000,000,.0);
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                border-radius: 5px;
+            }
+            .btninsubcontainer1-2:hover{
+                background: #1E1309;
+                transition: all 0.3s;
+            }
+            .subcontain1{
+                width: 500px;
+                height: 500px;
+                background-image: url(../folder/images/franks-barbershop-1.jpg);
+                background-repeat:space;
+                background-position:center;
+                background-size: 600px 700px;;
+                border-radius: 50%;
+                margin-left: 340px;
+                margin-top: 5px;
+                background-attachment: fixed;
+                /*box-shadow: 0px 0px 10px 0px #1E1309;*/
+            }
+            .insubcontain1{
+                position: absolute;
+                width: 500px;
+                height: 250px;
+                background-color: rgba(000,000,000,.5);
+                margin-top: 250px;
+                margin-left: 0px;
+                border-radius: 0px 0px 500px 500px;
+                font-family: "timeBurner";
+                color: #fff;
+                text-align: center;
+            }
+            .p-insubcontainer1{
+                font-size: 23px;
+                margin-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #FFF;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            .container2{
+                background-image: url(../folder/images/slide1.jpg);
+                margin-left: 420px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 1125px;
+                width: 500px;
+                height: 500px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:1000px 700px;
+                border-radius: 50%;
+                background-attachment: fixed;
+            }
+            .subcontainer2{
+                width: 500px;
+                height: 250px;
+                position: absolute;
+                background: rgba(000,000,000,.5);
+                margin-left: 0px;
+                margin-top: 250px;
+                border-radius:0px 0px 500px 500px;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                text-align: center;
+            }
+            .imgcontainer2{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 2px #fff;
+                position: absolute;
+                margin-top: -160px;
+                margin-left: 175px;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+            }
+            .imgcontainer2-1{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: 510px;
+                margin-left: 175px;
+            }
+            .imgcontainer2-2{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: 170px;
+                margin-left: -160px;
+            }
+            .imgcontainer2-3{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: 170px;
+                margin-left: 510px;
+            }
+            .imgcontainer2-4{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: -60px;
+                margin-left: -67px;
+            }
+            .imgcontainer2-5{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: -60px;
+                margin-left: 415px;
+            }
+            .imgcontainer2-6{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: 400px;
+                margin-left: -75px;
+            }
+            .imgcontainer2-7{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: solid 0px #fff;
+                box-shadow: 0px 0px 5px 0px #fff;
+                position: absolute;
+                margin-top: 400px;
+                margin-left: 430px;
+            }
+            .p-subcontainer2{
+                font-size: 23px;
+                margin-top: 10px;
+            }
+            .btnsubcontainer2{
+                width: 150px;
+                height: 30px;
+                border:0;
+                border: solid 1px #F6F6F6;
+                border-radius: 5px;
+                font-family: "timeBurner";
+                font-size: 13px;
+                background: rgba(000,000,000,.0);
+                color: #fff;
+                margin-top: 10px;
+            }
+            .btnsubcontainer2:hover{
+                transition: all 0.3s;
+                background: #1E1309;
+            }
+            .container3{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 225px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 1800px;
+                width: 500px;
+                height: 500px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:1150px 700px;
+                border-radius: 50%;
+                background-attachment: fixed;
+            }
+            .subcontainer3{
+                width: 500px;
+                height: 250px;
+                position: absolute;
+                background: rgba(000,000,000,.5);
+                margin-left: 0px;
+                margin-top: 250px;
+                border-radius:0px 0px 500px 500px;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                text-align: center;
+            }
+            .container4{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 625px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 1800px;
+                width: 500px;
+                height: 500px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:1150px 700px;
+                border-radius: 50%;
+                background-attachment: fixed;
+            }
+            .imgsubcontainer3{
+                width: 130px;
+                height: 130px;
+                margin-left: -235px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .insubcontainer3{
+                background: #000;
+                opacity: 0.7;  
+                width: 130px;
+                height: 65px;
+                position: absolute;
+                margin-top:65px;
+                margin-left: 15px;
+                border-radius: 0px 0px 100px 100px;
+            }
+            .p-insubcontainer3{
+                margin-top: 20px;
+            }
+            .imgsubcontainer4{
+                width: 130px;
+                height: 130px;
+                margin-left: 0px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .insubcontainer4{
+                background: #000;
+                opacity: 0.7;  
+                width: 130px;
+                height: 65px;
+                position: absolute;
+                margin-top:65px;
+                margin-left: 250px;
+                border-radius: 0px 0px 100px 100px;
+            }
+            .imgsubcontainer5{
+                width: 130px;
+                height: 130px;
+                margin-left: -120px;
+                border-radius: 50%;
+                margin-top: 100px;
+                position: absolute;
+            }
+            .insubcontainer5{
+                background: #000;
+                opacity: 0.7;  
+                width: 130px;
+                height: 65px;
+                position: absolute;
+                margin-top:165px;
+                margin-left: 130px;
+                border-radius: 0px 0px 100px 100px;
+            }
+            .container5{
+                background-image: url(../folder/images/23590003246_8ec1eaaf7a_b.jpg);
+                margin-left: 100px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 2350px;
+                width: 500px;
+                height: 500px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:800px 700px;
+                border-radius: 50%;
+                background-attachment: fixed;
+            }
+            .container6{
+                position: absolute;
+                width: 730px;
+                height: 500px;
+                border:solid 0px #fff;
+                margin-top: 2350px;
+                margin-left: 610px;
+            }
+            .imgcontainer6{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .txtimg{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 90px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+            }
+            .p-txtimg{
+               margin-top: 10px; 
+            }
+            .imgcontainer6-1{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 250px;
+            }
+            .txtimg-1{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 90px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+                margin-left: 250px;
+            }
+            .imgcontainer6-2{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 500px;
+            }
+            .txtimg-2{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 90px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+                margin-left: 500px;
+            }
+            .imgcontainer6-3{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 120px;
+                margin-top: 165px;
+            }
+            .txtimg-3{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 255px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+                margin-left: 120px;
+            }
+            .imgcontainer6-4{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 375px;
+                margin-top: 165px;
+            }
+            .txtimg-4{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 255px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+                margin-left: 375px;
+            }
+            .imgcontainer6-5{
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                position: absolute;
+                margin-left: 250px;
+                margin-top: 320px;
+            }
+            .txtimg-5{
+                width: 180px;
+                height: 90px;
+                border-radius: 0px 0px 100px 100px;
+                background: rgba(000,000,000,.5);
+                position: absolute;
+                margin-top: 410px;
+                text-align: center;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 25px;
+                margin-left: 250px;
+            }
+            .container7{
+                background-image: url(../folder/images/03-01-15_17-56-28_01.jpg);
+                margin-left: 420px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 2850px;
+                width: 500px;
+                height: 500px;
+                background-repeat:space;
+                background-position: center;
+                background-size:550px 700px;
+                border-radius: 50%;
+                background-attachment: fixed;
+            }
+            .container8{
+                width: 404px;
+                height: 200px;
+                position: absolute;
+                background: rgba(000,000,000,.5);
+                margin-left: 247px;
+                margin-top: 3813px;
+                border-radius:0px 0px 0px 0px;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                text-align: center;
+                transform: rotate(45deg);
+            }
+            .container8-1{
+                width: 404px;
+                height: 200px;
+                position: absolute;
+                background: rgba(000,000,000,.5);
+                margin-left: 675px;
+                margin-top: 3813px;
+                border-radius:0px 0px 0px 0px;
+                font-family: "timeBurner";
+                color: #fff;
+                font-size: 15px;
+                text-align: center;
+                transform: rotate(-45deg);
+            }
+            .container9{
+                background-image: url(../folder/images/hiro-barber-shop.jpg);
+                margin-left: 420px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3600px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-1{
+                background-image: url(../folder/images/tanksley-amy_barbershop-interior-400x267.jpg);
+                margin-left: 705px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3600px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-2{
+                background-image: url(../folder/images/o.jpg);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3458px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-3{
+                background-image: url(../folder/images/03-01-15_17-56-28_01.jpg);
+                margin-left: 847px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3458px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:515px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-4{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 990px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3600px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:515px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-5{
+                background-image: url(../folder/images/franks-barbershop-1.jpg);
+                margin-left: 278px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3458px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:550px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-6{
+                background-image: url(../folder/images/images.jpg);
+                margin-left: 136px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3600px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:550px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .container9-7{
+                background-image: url(../folder/images/maxresdefault.jpg);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 3743px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                transform: rotate(45deg);
+                background-attachment: fixed;
+            }
+            .inpttxt2{
+                border: 0;
+                width: 200px;
+                height: 35px;
+                padding-left: 15px;
+                font-family: "timeBurner";
+                font-size: 13px;
+            }
+            .btn2{
+                width: 50px;
+                height: 35px;
+                border: 0;
+                font-family: "timeBurner";
+                font-size: 15px;
+                background-color: rgba(000,000,000,.5);
+                color: #fff;
+                border: solid 1px #fff;
+            }
+            .btn2:hover{
+                background-color: #1E1309;
+                transition: all 0.3s;
+                border: solid 1px #fff;
+            }
+            .container10{
+                width: 150px;
+                height: 25px;
+                background: rgba(000,000,000,.6);
+                position: absolute;
+                margin-top: 0px;
+                margin-left: 0px;
+                color: #fff;
+                font-family: "timeBurner";
+                font-size: 13px;
+                padding-top: 5px;
+                padding-left: 2px;
+            }
+            .container11{
+                background-image: url(../folder/images/maxresdefault.jpg);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 200px;
+                height: 200px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-1{
+                background-image: url(../folder/images/maxresdefault.jpg);
+                margin-left: 763px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4300px;
+                width: 200px;
+                height: 201px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-2{
+                background-image: url(../folder/images/franks-barbershop-1.jpg);
+                margin-left: 763px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 200px;
+                height: 99px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-3{
+                background-image: url(../folder/images/franks-barbershop-1.jpg);
+                margin-left: 964px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 160px;
+                height: 150px;
+                background-repeat:space;
+                background-position:left left;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-4{
+                background-image: url(../folder/images/03-01-15_17-56-28_01.jpg);
+                margin-left: 964px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4351px;
+                width: 160px;
+                height: 149px;
+                background-repeat:space;
+                background-position: center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-5{
+                background-image: url(../folder/images/03-01-15_17-56-28_01.jpg);
+                margin-left: 1125px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 100px;
+                height: 300px;
+                background-repeat:space;
+                background-position: center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-6{
+                background-image: url(../folder/images/6d251401e40d35ea909a989e63b0ae8b.jpg);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4401px;
+                width: 200px;
+                height: 100px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-7{
+                background-image: url(../folder/images/6d251401e40d35ea909a989e63b0ae8b.jpg);
+                margin-left: 411px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4401px;
+                width: 150px;
+                height: 300px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:500px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-8{
+                background-image: url(../folder/images/18th-amendment-barbershop-gastown-3.jpeg);
+                margin-left: 161px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4320px;
+                width: 400px;
+                height: 80px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-9{
+                background-image: url(../folder/images/18th-amendment-barbershop-gastown-3.jpeg);
+                margin-left: 461px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 100px;
+                height: 119px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-10{
+                background-image: url(../folder/images/feature1.png);
+                margin-left: 161px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 299px;
+                height: 58px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-11{
+                background-image: url(../folder/images/feature1.png);
+                margin-left: 360px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4259px;
+                width: 100px;
+                height: 60px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-12{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 259px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4259px;
+                width: 100px;
+                height: 60px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-13{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 161px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4259px;
+                width: 97px;
+                height: 60px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-14{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 63px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 97px;
+                height: 120px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 300px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-15{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 1226px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4200px;
+                width: 50px;
+                height: 150px;
+                background-repeat:space;
+                background-position: center;
+                background-size:contain;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-16{
+                background-image: url(../folder/images/barber-shop.jpg);
+                margin-left: 1226px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4351px;
+                width: 50px;
+                height: 149px;
+                background-repeat:space;
+                background-position: center;
+                background-size:contain;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-17{
+                background-image: url(../folder/images/killjoy%20barbers%20barbershop.JPG);
+                margin-left: 63px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4321px;
+                width: 97px;
+                height: 190px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-18{
+                background-image: url(../folder/images/killjoy%20barbers%20barbershop.JPG);
+                margin-left: 161px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4401px;
+                width: 120px;
+                height: 190px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:700px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-19{
+                background-image: url(../folder/images/maxresdefaultd.JPG);
+                margin-left: 282px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4401px;
+                width: 128px;
+                height: 95px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-20{
+                background-image: url(../folder/images/maxresdefaultd.JPG);
+                margin-left: 282px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4497px;
+                width: 128px;
+                height: 94px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-21{
+                background-image: url(../folder/images/slide1.JPG);
+                margin-left: 161px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4592px;
+                width: 249px;
+                height: 109px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-22{
+                background-image: url(../folder/images/slide1.JPG);
+                margin-left: 63px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4512px;
+                width: 97px;
+                height: 189px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-23{
+                background-image: url(../folder/images/stylingroom.JPG);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4502px;
+                width: 97px;
+                height: 120px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-24{
+                background-image: url(../folder/images/stylingroom.JPG);
+                margin-left: 562px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4623px;
+                width: 300px;
+                height: 78px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-25{
+                background-image: url(../folder/images/o.JPG);
+                margin-left: 660px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4502px;
+                width: 303px;
+                height: 60px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-26{
+                background-image: url(../folder/images/o.JPG);
+                margin-left: 660px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4563px;
+                width: 100px;
+                height: 59px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-27{
+                background-image: url(../folder/images/o.JPG);
+                margin-left: 761px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4563px;
+                width: 101px;
+                height: 59px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-28{
+                background-image: url(../folder/images/Drapers_Barber_Shop_Martinsville_r620x413.JPG);
+                margin-left: 863px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4563px;
+                width: 260px;
+                height: 138px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-29{
+                background-image: url(../folder/images/Drapers_Barber_Shop_Martinsville_r620x413.JPG);
+                margin-left: 964px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4501px;
+                width: 261px;
+                height: 61px;
+                background-repeat:space;
+                background-position:right center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-30{
+                background-image: url(../folder/images/1103_0565.JPG);
+                margin-left: 1124px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4563px;
+                width: 101px;
+                height: 137px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-31{
+                background-image: url(../folder/images/1103_0565.JPG);
+                margin-left: 1226px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4501px;
+                width: 50px;
+                height: 199px;
+                background-repeat:space;
+                background-position:left center;
+                background-size:500px 400px;
+                border-radius: 0%;
+                background-attachment: fixed;
+            }
+            .container11-32{
+                background: rgba(000,000,000,.7);
+                margin-left: 440px;
+                border: solid 0px #fff;
+                position: absolute;
+                margin-top: 4342px;
+                width: 500px;
+                height: 360px;
+                border-radius: 0%;
+                font-family: "timeBurner";
+                font-size: 20px;
+                text-align: center;
+                color: #fff;
+            }
+            .p-container11-32{
+                margin-top: 0px;
+                font-size: 70px;
+            }
+            .btn-container11-32{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                border-radius: 50%;
+                font-family: "timeBurner";
+                color: #fff;
+                background: rgba(000,000,000,.0);
+                border: solid 1px #fff;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            .btn-container11-32:hover{
+                transition: all 0.3s;
+                background: #1E1309;
+            }
+            .btn2-container11-32{
+                width: 60px;
+                height: 60px;
+                border: 0;
+                border-radius: 50%;
+                font-family: "timeBurner";
+                color: #fff;
+                background: rgba(000,000,000,.0);
+                border: solid 1px #fff;
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
+            .btn2-container11-32:hover{
+                transition: all 0.3s;
+                background: #1E1309;
+            }
+            .p2-container11-32{
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+            <div class="subcontain1">
+                <div class="insubcontain1">
+                <p class="p-insubcontainer1">Did You Know ?</p>
+                    Barber Shop kami telah di dirikan sejak tahun 1945<br>
+                    Kunjungi langsung Barber Shop kami di Jl.Jangka Ayahanda No 24 A<br>
+                    Kami menyediakan pelayanan terbaik dengan Barber <br>yang terbaik berpengalaman dan bersetifikan <br>
+                    Download juga aplikasinya di <br><button class="btninsubcontainer1">Play Store</button> <button class="btninsubcontainer1-2">iTunes</button>
+                </div>
+                </div>
+        </div>
+            <div class="container2">
+                <div class="subcontainer2">
+                <p class="p-subcontainer2">Barbers List</p>
+                    Kami memiliki barber yang sangat profesional<br> Berikut beberapa pilihan barber kami yang telah berpengalaman<br> Anda dapat memberi tanggapan dan keluhan <br>dengan pelayanan yang diberikan oleh berber kami<br>Kami meminta maaf dan akan bertanggung jawab<br>apabila pelayanan yang diberikan tidak sesuai <br>atau tindakannya yang merugikan anda<br>
+                    <button type="button" class="btnsubcontainer2">See More Barbers</button>
+                </div>
+                <img  src="../folder/images/HollowGround_barbers.jpg" class="imgcontainer2">
+                <img  src="../folder/images/6d251401e40d35ea909a989e63b0ae8b.jpg" class="imgcontainer2-1">
+                <img  src="../folder/images/killjoy barbers barbershop.jpg" class="imgcontainer2-2">
+                <img  src="../folder/images/23590003246_8ec1eaaf7a_b.jpg" class="imgcontainer2-3">
+                <img  src="../folder/images/23590003246_8ec1eaaf7a_b.jpg" class="imgcontainer2-4">
+                <img  src="../folder/images/6d251401e40d35ea909a989e63b0ae8b.jpg" class="imgcontainer2-5">
+                <img  src="../folder/images/HollowGround_barbers.jpg" class="imgcontainer2-6">
+                <img  src="../folder/images/killjoy barbers barbershop.jpg" class="imgcontainer2-7">
+            </div>
+            <div class="container3">
+                <div class="subcontainer3">
+                <img src="../folder/images/index.jpg" class="imgsubcontainer3">
+                <div class="insubcontainer3"><p class="p-insubcontainer3">Comfortable</p></div>
+                <img src="../folder/images/Drapers_Barber_Shop_Martinsville_r620x413.jpg" class="imgsubcontainer5">
+                <div class="insubcontainer5"><p class="p-insubcontainer3">Faster</p></div>
+                <img src="../folder/images/HollowGround_barbers.jpg" class="imgsubcontainer4">
+                <div class="insubcontainer4"><p class="p-insubcontainer3">Orderly</p></div></div>
+                </div>
+            <div class="container4">
+                <div class="subcontainer3"><p class="p-subcontainer2">Our Facility</p>
+                    Kami memiliki fasilitas yang dapat membuat anda betah dan ingin berkunjung kembali<br>
+                    Berikut beberapa fasilitas yang dapat kami tawarkan <br>
+                    Fasilitas di Barber Shop :<br>
+                    
+                    - Fasilitas di Barber Shop,
+                    - Fasilitas di Barber Shop<br>
+                    Fasilitas Order :<br>
+                    - Fasilitas di Barber Shop
+                    - Fasilitas di Barber Shop<br>
+                    <button type="button" class="btnsubcontainer2">See More Facilities</button></div>
+                </div>
+            <div class="container5">
+                <div class="subcontainer2"><p class="p-subcontainer2">Tranding Models</p>
+                    Berikut beberapa tranding model di dunia <br>yang dipakai beberapa artis ternama dan<br> dapat menjadi refrensi anda <br>untuk mengubah gaya rambut <br>dengan harga yang cukup terjangkau <br>
+                    <button type="button" class="btnsubcontainer2">See More Models</button></div>
+                </div>
+            <div class="container6">
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6"><div class="txtimg"><p class="p-txtimg">Klimis</p>$ 1.00</div>
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6-1"><div class="txtimg-1"><p class="p-txtimg">Mohawk</p>$ 5.00</div>
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6-2"><div class="txtimg-2"><p class="p-txtimg">Cepak</p>$ 3.00</div>
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6-3"><div class="txtimg-3"><p class="p-txtimg">Botak</p>$ 9.00</div>
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6-4"><div class="txtimg-4"><p class="p-txtimg">Satu Sisir</p>$ 7.00</div>
+                <img src="../folder/images/maxresdefault.jpg" class="imgcontainer6-5"><div class="txtimg-5"><p class="p-txtimg">Beckham Style</p>$ 10.00</div>
+            </div>
+            <div class="container7">
+                <div class="subcontainer3"><p class="p-subcontainer2">Order & Booking</p>
+                    Jika anda ingin barber kami tiba di lokasi anda sekarang <br>silahkan order segera barber kami akan tiba dalam waktu 20 menit <br>anda juga dapat memesan barber kami di jauh - jauh hari <br>dengan membooking dari sekarang<br>
+                    <button type="button" class="btnsubcontainer2">Order Now</button>
+                    <button type="button" class="btnsubcontainer2">Booking</button></div>
+            </div>
+            <div class="container9">
+                <div class="container10">Royal Barber - England</div>
+            </div>
+            <div class="container9-1">
+                <div class="container10">Victory BarberShop - Italia</div>
+            </div>
+            <div class="container9-2">
+                <div class="container10">De Familia - Spanyol</div>
+            </div>
+            <div class="container9-3">
+                <div class="container10">Saint Barber - France</div>
+            </div>
+            <div class="container9-4">
+                <div class="container10">VOC Barber- Netherland</div>
+            </div>
+            <div class="container9-5">
+                <div class="container10">Nazi Barber - German</div>
+            </div>
+            <div class="container9-6">
+                <div class="container10">Kings Roll  - Portugal</div>
+            </div>
+            <div class="container9-7">
+                <div class="container10">Switzer Barber - Swiss</div>
+            </div>
+            <div class="container8"><p class="p-subcontainer2">Recomended Place</p>
+                    Jika anda ingin merasakan sensasi yang berbeda<br> dari barber shop ternama dengan pelayanan<br> yang terbaik kami merekomendasika beberapa tempat yang dapat anda coba <br>
+                    <button type="button" class="btnsubcontainer2">See More Place</button></div>
+            <div class="container8-1"><p class="p-subcontainer2">The Best Barber Shop </p>
+                    Cari lebih banyak tentang Barber Shop ternama yang lain setiap Barber Shop memiliki ciri khas tersendiri dengan pelayanan yang berbeda - beda<br>
+                <input type="text" class="inpttxt2" placeholder="Find Out Your Barber">
+                 <button type="button" class="btn2">Find</button></div>      
+            <div class="container11"></div>
+            <div class="container11-1"></div>
+            <div class="container11-2"></div>
+            <div class="container11-3"></div>
+            <div class="container11-4"></div>
+            <div class="container11-5"></div>
+            <div class="container11-6"></div>
+            <div class="container11-7"></div>
+            <div class="container11-8"></div>
+            <div class="container11-9"></div>
+            <div class="container11-10"></div>
+            <div class="container11-11"></div>
+            <div class="container11-12"></div>
+            <div class="container11-13"></div>
+            <div class="container11-14"></div>
+            <div class="container11-15"></div>
+            <div class="container11-16"></div>
+            <div class="container11-17"></div>
+            <div class="container11-18"></div>
+            <div class="container11-19"></div>
+            <div class="container11-20"></div>
+            <div class="container11-21"></div>
+            <div class="container11-22"></div>
+            <div class="container11-23"></div>
+            <div class="container11-24"></div>
+            <div class="container11-25"></div>
+            <div class="container11-26"></div>
+            <div class="container11-27"></div>
+            <div class="container11-28"></div>
+            <div class="container11-29"></div>
+            <div class="container11-30"></div>
+            <div class="container11-31"></div>
+            <div class="container11-32">
+                <p class="p-container11-32">Our Galery</p>
+                Like Follow Subscribe and Share Us On<br>
+                <button class="btn-container11-32">f</button>
+                <button class="btn-container11-32">t</button>
+                <button class="btn-container11-32">ig</button>
+                <button class="btn-container11-32">g+</button>
+                <button class="btn-container11-32">p</button><br>
+                Rate Us Now !<br>
+                <button class="btn2-container11-32">Very Bad</button>
+                <button class="btn2-container11-32">Bad</button>
+                <button class="btn2-container11-32">Good</button>
+                <button class="btn2-container11-32">Very Good</button>
+                <button class="btn2-container11-32">Perfect</button>
+                <button class="btn2-container11-32">Excellent</button>
+                <button class="btn2-container11-32">Amazing</button><br>
+                <p class="p2-container11-32">Enjoy Your Day !<br>Barber Shop Delivery<br>&copy;nicolahara20160429</p>
+            </div>
+        <div class="line">
+        <p class="subline1">B</p>
+        <p class="subline2">D</p>
+        </div>
+        <div class="massage">
+        </div>
+             <a href=""><div class="image">
+             <img src="../folder/images/46179579-barber-shop-design-elements-set-of-vintage-barber-shop-logo-labels-badges-and-design-element-vector.jpg" class="subimg"><p class="subimgtext">S</p>
+             </div></a>  
+            <div class="text">Now The Barber Is Coming To You<br>
+            <input type="text" class="inpttxt" placeholder="Find Out Your Barber">
+                 <button type="button" class="btn">Find</button>
+                 <a href="" class="link1">Log In</a>
+                 <a href="" class="link2">Sign In</a>
+            </div> 
+        </div>
+    </body>
+</html>
